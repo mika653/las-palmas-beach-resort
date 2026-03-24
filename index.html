@@ -506,21 +506,22 @@
     }
     .exp-card:hover::before { opacity: 1; }
     @media (hover: none) { .exp-card::before { opacity: 1; } }
-    .exp-card:nth-child(1)::before { background: var(--teal); }
-    .exp-card:nth-child(2)::before { background: var(--coral); }
-    .exp-card:nth-child(3)::before { background: var(--yellow); }
-    .exp-card:nth-child(4)::before { background: var(--green); }
+    .exp-card:nth-child(1)::before { background: #5B8FD4; }
+    .exp-card:nth-child(2)::before { background: #E8657A; }
+    .exp-card:nth-child(3)::before { background: #D47B4B; }
+    .exp-card:nth-child(4)::before { background: #9B6FB5; }
     .exp-card:hover {
       transform: translateY(-3px);
       box-shadow: 0 8px 32px rgba(12, 74, 142, 0.06);
       border-color: transparent;
     }
     .exp-card:active { transform: scale(0.98); }
-    .exp-card-emoji {
-      font-size: 2rem; margin-bottom: 1rem; display: block;
+    .exp-card-icon {
+      width: 48px; height: 48px; margin-bottom: 1.25rem; display: block;
       transition: transform 0.4s var(--ease-out-expo);
     }
-    .exp-card:hover .exp-card-emoji { transform: scale(1.15); }
+    .exp-card:hover .exp-card-icon { transform: scale(1.1) rotate(-3deg); }
+    .exp-card-icon svg { width: 100%; height: 100%; }
     .exp-card h3 {
       font-family: var(--font-display); font-size: 1.2rem;
       font-weight: 400; margin-bottom: 0.5rem; color: var(--text-primary);
@@ -956,22 +957,79 @@
 
       <div class="experience-grid">
         <div class="exp-card reveal">
-          <span class="exp-card-emoji" aria-hidden="true">🌊</span>
+          <span class="exp-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Paddle & wave - ocean blue -->
+              <path d="M8 32c4-3 8 3 12 0s8-3 12 0s8 3 12 0" stroke="#5B8FD4" stroke-width="2" stroke-linecap="round"/>
+              <path d="M10 38c4-2 8 2 12 0s8-2 12 0" stroke="#5B8FD4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+              <line x1="24" y1="8" x2="24" y2="28" stroke="#D47B4B" stroke-width="2" stroke-linecap="round"/>
+              <ellipse cx="24" cy="9" rx="4" ry="7" stroke="#F2C94C" stroke-width="1.5" fill="none" transform="rotate(-15 24 9)"/>
+              <circle cx="36" cy="12" r="5" stroke="#F2C94C" stroke-width="1.5" fill="none" opacity="0.5"/>
+              <path d="M33.5 12h5M36 9.5v5" stroke="#F2C94C" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </span>
           <h3>Morning Paddle</h3>
           <p>Glide across still waters on a paddleboard as the sun rises over the Pacific. Just you, the sea, and the sound of your own breathing.</p>
         </div>
         <div class="exp-card reveal reveal-delay-1">
-          <span class="exp-card-emoji" aria-hidden="true">🐚</span>
+          <span class="exp-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Shell & starfish - coral pink -->
+              <path d="M14 36c0 0-2-8 4-14s14-8 18-6c0 0-6 1-12 6s-6 12-6 12" stroke="#E8657A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 36c0 0 2-6 6-10" stroke="#E8657A" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+              <path d="M14 36c0 0 4-4 10-6" stroke="#E8657A" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+              <path d="M14 36c0 0 6-2 12-2" stroke="#E8657A" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+              <!-- Starfish -->
+              <path d="M38 30l-2.5-4.5 1-5-4.5 2L28 20l1 5.2-3 4.3 5-.5 3.8 3z" stroke="#D47B4B" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+              <!-- Sand dots -->
+              <circle cx="8" cy="40" r="1" fill="#F2C94C" opacity="0.5"/>
+              <circle cx="22" cy="42" r="1" fill="#F2C94C" opacity="0.4"/>
+              <circle cx="40" cy="40" r="0.8" fill="#F2C94C" opacity="0.3"/>
+            </svg>
+          </span>
           <h3>Beach Days</h3>
           <p>Build castles, collect shells, or simply lie back and let the hours drift. The best days here are the ones with no plans at all.</p>
         </div>
         <div class="exp-card reveal reveal-delay-2">
-          <span class="exp-card-emoji" aria-hidden="true">🌅</span>
+          <span class="exp-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Sunset over water - orange/pink/purple -->
+              <circle cx="24" cy="24" r="8" stroke="#D47B4B" stroke-width="2" fill="none"/>
+              <path d="M14 24h-6" stroke="#F2C94C" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M40 24h-6" stroke="#F2C94C" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M24 14V8" stroke="#F2C94C" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M17 17l-3-3" stroke="#F2C94C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+              <path d="M31 17l3-3" stroke="#F2C94C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+              <!-- Horizon line -->
+              <line x1="4" y1="32" x2="44" y2="32" stroke="#9B6FB5" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+              <!-- Water reflections -->
+              <path d="M16 36h6" stroke="#E8657A" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+              <path d="M26 36h8" stroke="#E8657A" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+              <path d="M20 40h10" stroke="#9B6FB5" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>
+            </svg>
+          </span>
           <h3>Sunset Watching</h3>
           <p>Every evening, the sky over Polillo puts on a show. Bring someone you love — or just bring yourself. Either way, you won't forget it.</p>
         </div>
         <div class="exp-card reveal reveal-delay-3">
-          <span class="exp-card-emoji" aria-hidden="true">🏝️</span>
+          <span class="exp-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Island with palm - purple/blue -->
+              <path d="M6 36c4-1 8-4 14-4s10 2 16 2s8-1 8-1" stroke="#5B8FD4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+              <ellipse cx="24" cy="34" rx="10" ry="3" stroke="#D47B4B" stroke-width="2" fill="none"/>
+              <!-- Palm trunk -->
+              <path d="M26 34c1-4 2-10 2-16" stroke="#9B6FB5" stroke-width="2" stroke-linecap="round"/>
+              <!-- Palm fronds -->
+              <path d="M28 18c-6 2-10 6-12 8" stroke="#9B6FB5" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 18c-2 4-2 10-1 12" stroke="#9B6FB5" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+              <path d="M28 18c4 3 8 6 8 10" stroke="#9B6FB5" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 18c6 0 10 1 12 2" stroke="#9B6FB5" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+              <!-- Boat -->
+              <path d="M6 30c0 0 2-2 5-2s4 2 4 2" stroke="#E8657A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <line x1="11" y1="26" x2="11" y2="30" stroke="#E8657A" stroke-width="1" stroke-linecap="round"/>
+              <path d="M11 26l4 2" stroke="#F2C94C" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+          </span>
           <h3>Island Hopping</h3>
           <p>Explore hidden coves, white sand beaches, and the wild beauty of the Polillo group of islands. Adventure is always just a boat ride away.</p>
         </div>
