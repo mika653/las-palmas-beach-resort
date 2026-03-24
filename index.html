@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Las Palmas Beach Resort — Polillo Island, Quezon</title>
+  <meta name="description" content="A quiet corner of Polillo Island. Colorful wigwam cottages, gentle waves, and sunsets that stay with you. Las Palmas Beach Resort — where the island sets the pace.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Las Palmas Beach Resort — Polillo Island, Quezon">
+  <meta property="og:description" content="Colorful wigwam cottages, gentle waves, and sunsets that stay with you. A quiet corner of the Philippines, waiting for you.">
+  <meta property="og:image" content="487172990_1147964767340988_9101583289754417914_n.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_PH">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Las Palmas Beach Resort",
+    "description": "Beach resort with colorful wigwam cottages and villas on Polillo Island, Quezon, Philippines.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Brgy. Kalubakis",
+      "addressLocality": "Polillo",
+      "addressRegion": "Quezon",
+      "addressCountry": "PH"
+    },
+    "telephone": "+63-915-794-3113",
+    "email": "laspalmaspolillo@gmail.com",
+    "url": "https://www.facebook.com/laspalmasresortpolilioquezon",
+    "sameAs": [
+      "https://www.facebook.com/laspalmasresortpolilioquezon",
+      "https://www.instagram.com/laspalmas_resortpolillo"
+    ]
+  }
+  </script>
+
+  <!-- Fonts: async loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+
+  <style>
+    :root {
+      --blue-deep: #0C4A8E;
+      --blue-mid: #1A6FD4;
+      --blue-light: #E8F1FB;
+      --blue-dark: #061D3C;
+      --sand: #F5F0E8;
+      --sand-dark: #E8DFD2;
+      --white: #FFFFFF;
+      --coral: #E8657A;
+      --coral-soft: #F9E0E4;
+      --yellow: #F2C94C;
+      --yellow-soft: #FDF5DD;
+      --green: #4CAF7D;
+      --green-soft: #DFF2E8;
+      --teal: #3DB8B0;
+      --teal-soft: #DDF4F2;
+      --text-primary: #1A2B3F;
+      --text-secondary: #5A6B7E;
+      --text-light: #8A9AAE;
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'Outfit', -apple-system, sans-serif;
+      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      scroll-padding-top: 72px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-weight: 300;
+      color: var(--text-primary);
+      line-height: 1.7;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    /* ---- Skip Link ---- */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      padding: 0.75rem 1.25rem;
+      background: var(--blue-deep);
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 500;
+      border-radius: 0 0 8px 8px;
+      z-index: 10000;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ---- Typography ---- */
+    .heading-xl {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 6vw, 4.5rem);
+      line-height: 1.1;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+    .heading-lg {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4vw, 3rem);
+      line-height: 1.15;
+      font-weight: 400;
+    }
+    .heading-md {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      line-height: 1.2;
+      font-weight: 400;
+    }
+    .subtitle {
+      font-family: var(--font-body);
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+    }
+    .label {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .label--section {
+      color: var(--text-light);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ---- Layout ---- */
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    section { position: relative; }
+
+    /* ---- Reveal Animations ---- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.9s var(--ease-out-expo), transform 0.9s var(--ease-out-expo);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ========================================
+       NAVIGATION
+    ======================================== */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 0 1.5rem;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+    }
+    .nav.scrolled {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 1px 0 rgba(12, 74, 142, 0.06);
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      z-index: 1001;
+    }
+    .nav-logo img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      border-radius: 6px;
+      transition: transform 0.3s var(--ease-out-quad);
+    }
+    .nav-logo:hover img { transform: rotate(-5deg) scale(1.05); }
+    .nav-logo-text {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--white);
+      transition: color 0.4s ease;
+    }
+    .nav.scrolled .nav-logo-text { color: var(--blue-deep); }
+
+    /* Hamburger */
+    .nav-hamburger {
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 1001; position: relative;
+    }
+    .nav-hamburger-lines { width: 22px; height: 14px; position: relative; }
+    .nav-hamburger-lines span {
+      display: block; width: 100%; height: 1.5px;
+      background: var(--white); position: absolute; left: 0;
+      transition: all 0.4s var(--ease-out-expo); border-radius: 2px;
+    }
+    .nav.scrolled .nav-hamburger-lines span { background: var(--blue-deep); }
+    .nav-hamburger-lines span:nth-child(1) { top: 0; }
+    .nav-hamburger-lines span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+    .nav-hamburger-lines span:nth-child(3) { bottom: 0; width: 60%; }
+    .nav-hamburger.active .nav-hamburger-lines span { background: var(--white) !important; }
+    .nav-hamburger.active .nav-hamburger-lines span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+    .nav-hamburger.active .nav-hamburger-lines span:nth-child(2) { opacity: 0; transform: translateX(-10px); }
+    .nav-hamburger.active .nav-hamburger-lines span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); width: 100%; }
+
+    /* Mobile menu */
+    .nav-menu {
+      position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+      background: var(--blue-deep);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      opacity: 0; visibility: hidden;
+      transition: opacity 0.5s var(--ease-out-expo), visibility 0.5s;
+      z-index: 999;
+    }
+    .nav-menu.open { opacity: 1; visibility: visible; }
+    .nav-menu a {
+      font-family: var(--font-display); font-size: 2rem; color: var(--white);
+      padding: 0.7rem 2rem; opacity: 0; transform: translateY(20px);
+      transition: opacity 0.4s ease, transform 0.5s var(--ease-out-expo), color 0.2s ease;
+    }
+    .nav-menu.open a { opacity: 1; transform: translateY(0); }
+    .nav-menu.open a:nth-child(1) { transition-delay: 0.1s; }
+    .nav-menu.open a:nth-child(2) { transition-delay: 0.15s; }
+    .nav-menu.open a:nth-child(3) { transition-delay: 0.2s; }
+    .nav-menu.open a:nth-child(4) { transition-delay: 0.25s; }
+    .nav-menu.open a:nth-child(5) { transition-delay: 0.3s; }
+    .nav-menu a:hover, .nav-menu a:focus-visible { color: var(--yellow); }
+    .nav-menu-sub {
+      margin-top: 2.5rem; opacity: 0;
+      transition: opacity 0.5s ease 0.35s;
+    }
+    .nav-menu.open .nav-menu-sub { opacity: 1; }
+    .nav-menu-sub p { font-size: 0.8rem; color: rgba(255,255,255,0.55); letter-spacing: 0.1em; font-weight: 300; }
+
+    @media (min-width: 768px) {
+      .nav { padding: 0 2.5rem; }
+      .nav-hamburger { display: none; }
+      .nav-menu {
+        position: static; background: none; flex-direction: row;
+        opacity: 1; visibility: visible; gap: 0.25rem;
+      }
+      .nav-menu a {
+        font-family: var(--font-body); font-size: 0.8rem; font-weight: 500;
+        letter-spacing: 0.1em; text-transform: uppercase;
+        color: rgba(255,255,255,0.85); opacity: 1; transform: none;
+        padding: 0.6rem 1.1rem; border-radius: 100px;
+        transition: color 0.3s ease, background 0.3s ease;
+      }
+      .nav.scrolled .nav-menu a { color: var(--text-secondary); }
+      .nav-menu a:hover, .nav-menu a:focus-visible { color: var(--white); background: rgba(255,255,255,0.12); }
+      .nav.scrolled .nav-menu a:hover, .nav.scrolled .nav-menu a:focus-visible { color: var(--blue-deep); background: var(--blue-light); }
+      .nav-menu a.active { color: var(--white); background: rgba(255,255,255,0.15); }
+      .nav.scrolled .nav-menu a.active { color: var(--blue-deep); background: var(--blue-light); }
+      .nav-menu-sub { display: none; }
+    }
+
+    /* ========================================
+       HERO
+    ======================================== */
+    .hero {
+      min-height: 100vh; min-height: 100svh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; position: relative; overflow: hidden;
+      padding: 6rem 1.5rem 8rem;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0;
+      background:
+        radial-gradient(ellipse 120% 60% at 50% 100%, rgba(242, 201, 76, 0.35) 0%, transparent 60%),
+        radial-gradient(ellipse 100% 50% at 30% 80%, rgba(232, 101, 122, 0.25) 0%, transparent 50%),
+        radial-gradient(ellipse 80% 40% at 70% 70%, rgba(61, 184, 176, 0.15) 0%, transparent 50%),
+        linear-gradient(175deg,
+          #061D3C 0%, #0C4A8E 25%, #1A6FD4 40%, #4A9AE0 52%,
+          #E8A07A 68%, #E8657A 78%, #F2C94C 92%, #F5E6B8 100%
+        );
+    }
+    .hero::after {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: 0.4; z-index: 1; pointer-events: none;
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 600px; }
+    .hero-palm {
+      width: 100px; height: 100px;
+      margin: 0 auto 2rem;
+      opacity: 0;
+      animation: heroFadeDown 1s var(--ease-out-expo) 0.2s forwards;
+    }
+    .hero-palm img {
+      width: 100%; height: 100%; object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+    @keyframes heroFadeDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero-title {
+      color: var(--white); margin-bottom: 0.4rem;
+      opacity: 0; animation: heroFadeUp 1s var(--ease-out-expo) 0.4s forwards;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .hero-title-sub {
+      font-style: italic; font-size: 0.55em; opacity: 0.8;
+    }
+    .hero-location {
+      font-family: var(--font-body); font-size: 0.82rem; font-weight: 500;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.8); margin-bottom: 2rem;
+      opacity: 0; animation: heroFadeUp 1s var(--ease-out-expo) 0.55s forwards;
+    }
+    .hero-copy {
+      font-family: var(--font-display); font-style: italic;
+      font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+      color: rgba(255, 255, 255, 0.85); line-height: 1.6;
+      max-width: 460px; margin: 0 auto 2.5rem;
+      opacity: 0; animation: heroFadeUp 1s var(--ease-out-expo) 0.7s forwards;
+      text-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    }
+    .hero-cta {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 1rem 2.25rem;
+      border: 1px solid rgba(255,255,255,0.35); border-radius: 100px;
+      color: var(--white); font-family: var(--font-body);
+      font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      transition: all 0.4s var(--ease-out-quad);
+      opacity: 0; animation: heroFadeUp 1s var(--ease-out-expo) 0.85s forwards;
+    }
+    .hero-cta:hover, .hero-cta:focus-visible {
+      background: var(--white); color: var(--blue-deep);
+      border-color: var(--white); transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+    .hero-cta:active { transform: scale(0.97); }
+    .hero-cta svg { width: 14px; height: 14px; transition: transform 0.3s var(--ease-out-quad); }
+    .hero-cta:hover svg { transform: translateY(2px); }
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero-wave {
+      position: absolute; bottom: -2px; left: 0; right: 0; z-index: 3; line-height: 0;
+    }
+    .hero-wave svg { width: 100%; height: auto; display: block; }
+
+    /* ========================================
+       ABOUT
+    ======================================== */
+    .about {
+      padding: 5rem 0 5.5rem; background: var(--white);
+      position: relative; overflow: hidden;
+    }
+    .about-inner { max-width: 620px; margin: 0 auto; text-align: center; }
+    .about-accent { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 1.5rem; }
+    .about-accent-line { width: 32px; height: 1px; background: var(--teal); }
+    .about-accent-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--teal); }
+    .about h2 { margin-bottom: 2rem; color: var(--blue-deep); }
+    .about p { margin-bottom: 1.25rem; color: var(--text-secondary); font-size: 0.98rem; }
+    .about p:last-of-type { margin-bottom: 0; }
+    .about-highlight { display: inline; background: linear-gradient(180deg, transparent 60%, var(--yellow-soft) 60%); padding: 0 2px; }
+    .color-strip { display: flex; justify-content: center; gap: 6px; margin-top: 2.5rem; }
+    .color-strip span { width: 28px; height: 3px; border-radius: 3px; }
+    .color-strip span:nth-child(1) { background: var(--coral); }
+    .color-strip span:nth-child(2) { background: var(--yellow); }
+    .color-strip span:nth-child(3) { background: var(--green); }
+    .color-strip span:nth-child(4) { background: var(--teal); }
+
+    /* ---- Photo Break ---- */
+    .photo-break {
+      width: 100%; height: 280px; position: relative; overflow: hidden;
+    }
+    .photo-break img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center 60%;
+    }
+    .photo-break::after {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+      background: linear-gradient(180deg, var(--white) 0%, transparent 15%, transparent 85%, var(--sand) 100%);
+    }
+    @media (min-width: 768px) { .photo-break { height: 360px; } }
+
+    /* ---- Wave Divider ---- */
+    .wave-divider { line-height: 0; position: relative; z-index: 2; }
+    .wave-divider svg { width: 100%; height: auto; display: block; }
+
+    /* ========================================
+       ACCOMMODATIONS
+    ======================================== */
+    .stay {
+      padding: 5rem 0 5.5rem; background: var(--sand); position: relative;
+    }
+    .stay-header { text-align: center; margin-bottom: 3rem; }
+    .stay-header h2 { color: var(--blue-deep); margin-bottom: 0.5rem; }
+    .stay-cards {
+      display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+      max-width: 800px; margin: 0 auto 2rem;
+    }
+    @media (min-width: 640px) { .stay-cards { grid-template-columns: 1fr 1fr; } }
+    .stay-card {
+      background: var(--white); border-radius: 16px; overflow: hidden;
+      box-shadow: 0 2px 20px rgba(12, 74, 142, 0.04);
+      transition: transform 0.5s var(--ease-out-expo), box-shadow 0.5s var(--ease-out-expo);
+    }
+    .stay-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(12, 74, 142, 0.08); }
+    .stay-card:active { transform: scale(0.98); }
+    .stay-card-image {
+      height: 220px; position: relative; overflow: hidden;
+    }
+    .stay-card-image img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s var(--ease-out-expo);
+    }
+    .stay-card:hover .stay-card-image img { transform: scale(1.05); }
+    .stay-card-body { padding: 1.5rem; }
+    .stay-card-topline { width: 32px; height: 3px; border-radius: 3px; margin-bottom: 1rem; }
+    .stay-card--wigwam .stay-card-topline { background: var(--coral); }
+    .stay-card--villa .stay-card-topline { background: var(--green); }
+    .stay-card h3 {
+      font-family: var(--font-display); font-size: 1.4rem;
+      font-weight: 400; margin-bottom: 0.75rem; color: var(--text-primary);
+    }
+    .stay-card p {
+      font-size: 0.9rem; color: var(--text-secondary);
+      margin-bottom: 1rem; line-height: 1.65;
+    }
+    .stay-card-tag {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 0.4rem 0.85rem; border-radius: 100px;
+    }
+    .stay-card--wigwam .stay-card-tag { background: var(--coral-soft); color: var(--coral); }
+    .stay-card--villa .stay-card-tag { background: var(--green-soft); color: var(--green); }
+
+    .stay-cta-wrap { text-align: center; margin-top: 2.5rem; }
+    .stay-cta {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 1rem 2.25rem; background: var(--blue-deep); color: var(--white);
+      border-radius: 100px; font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      transition: all 0.4s var(--ease-out-quad);
+    }
+    .stay-cta:hover, .stay-cta:focus-visible {
+      background: var(--blue-mid); transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(12, 74, 142, 0.25);
+    }
+    .stay-cta:active { transform: scale(0.97); }
+    .stay-cta svg { width: 16px; height: 16px; }
+    .stay-note {
+      text-align: center; font-size: 0.85rem;
+      color: var(--text-light); font-style: italic; margin-top: 1rem;
+    }
+
+    /* ========================================
+       EXPERIENCE
+    ======================================== */
+    .experience {
+      padding: 5rem 0 2rem; background: var(--white); position: relative;
+    }
+    .experience-header { text-align: center; margin-bottom: 3rem; }
+    .experience-header h2 { color: var(--blue-deep); margin-bottom: 0.5rem; }
+    .experience-grid {
+      display: grid; grid-template-columns: 1fr; gap: 1.25rem;
+      max-width: 800px; margin: 0 auto;
+    }
+    @media (min-width: 480px) { .experience-grid { grid-template-columns: 1fr 1fr; } }
+    .exp-card {
+      padding: 2rem 1.5rem; border-radius: 16px;
+      border: 1px solid rgba(12, 74, 142, 0.1);
+      background: var(--white); transition: all 0.5s var(--ease-out-expo);
+      position: relative; overflow: hidden;
+    }
+    .exp-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; opacity: 0; transition: opacity 0.4s ease;
+    }
+    .exp-card:hover::before { opacity: 1; }
+    @media (hover: none) { .exp-card::before { opacity: 1; } }
+    .exp-card:nth-child(1)::before { background: var(--teal); }
+    .exp-card:nth-child(2)::before { background: var(--coral); }
+    .exp-card:nth-child(3)::before { background: var(--yellow); }
+    .exp-card:nth-child(4)::before { background: var(--green); }
+    .exp-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(12, 74, 142, 0.06);
+      border-color: transparent;
+    }
+    .exp-card:active { transform: scale(0.98); }
+    .exp-card-emoji {
+      font-size: 2rem; margin-bottom: 1rem; display: block;
+      transition: transform 0.4s var(--ease-out-expo);
+    }
+    .exp-card:hover .exp-card-emoji { transform: scale(1.15); }
+    .exp-card h3 {
+      font-family: var(--font-display); font-size: 1.2rem;
+      font-weight: 400; margin-bottom: 0.5rem; color: var(--text-primary);
+    }
+    .exp-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.65; }
+    .experience-cta {
+      text-align: center; margin-top: 2.5rem;
+    }
+    .experience-cta a {
+      font-family: var(--font-display); font-style: italic;
+      font-size: 1rem; color: var(--blue-mid);
+      border-bottom: 1px solid rgba(26, 111, 212, 0.3);
+      padding-bottom: 2px;
+      transition: color 0.3s ease, border-color 0.3s ease;
+    }
+    .experience-cta a:hover { color: var(--blue-deep); border-color: var(--blue-deep); }
+
+    /* ---- Wigwams Photo Strip ---- */
+    .photo-strip {
+      width: 100%; height: 240px; position: relative; overflow: hidden;
+      margin-top: 3rem;
+    }
+    .photo-strip img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center 70%;
+    }
+    .photo-strip::after {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+      background: linear-gradient(180deg, var(--white) 0%, transparent 20%, transparent 80%, rgba(232, 241, 251, 1) 100%);
+    }
+    @media (min-width: 768px) { .photo-strip { height: 320px; } }
+
+    /* ========================================
+       VISIT
+    ======================================== */
+    .visit {
+      padding: 5rem 0 5.5rem;
+      background: linear-gradient(180deg, var(--blue-light) 0%, var(--white) 100%);
+      position: relative;
+    }
+    .visit-header { text-align: center; margin-bottom: 3rem; }
+    .visit-header h2 { color: var(--blue-deep); margin-bottom: 0.5rem; }
+    .timeline { max-width: 520px; margin: 0 auto; position: relative; padding-left: 2.5rem; }
+    .timeline::before {
+      content: ''; position: absolute; left: 8px; top: 8px; bottom: 8px;
+      width: 1px; background: linear-gradient(180deg, var(--teal), var(--green), var(--blue-mid));
+    }
+    .timeline-step { position: relative; padding-bottom: 2.5rem; }
+    .timeline-step:last-child { padding-bottom: 0; }
+    .timeline-dot {
+      position: absolute; left: -2.5rem; top: 4px;
+      width: 17px; height: 17px; border-radius: 50%;
+      border: 2px solid; background: var(--white);
+    }
+    .timeline-step:nth-child(1) .timeline-dot { border-color: var(--teal); }
+    .timeline-step:nth-child(2) .timeline-dot { border-color: var(--green); }
+    .timeline-step:nth-child(3) .timeline-dot { border-color: var(--blue-mid); }
+    .timeline-step:nth-child(3) .timeline-dot::after {
+      content: ''; position: absolute; top: 3px; right: 3px; bottom: 3px; left: 3px;
+      border-radius: 50%; background: var(--blue-mid);
+    }
+    .timeline-step h3 {
+      font-family: var(--font-display); font-size: 1.15rem;
+      font-weight: 400; margin-bottom: 0.35rem; color: var(--text-primary);
+    }
+    .timeline-step p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
+    .visit-note {
+      text-align: center; margin-top: 2.5rem;
+      font-size: 0.85rem; color: var(--text-light); font-style: italic;
+    }
+
+    /* ========================================
+       TESTIMONIALS
+    ======================================== */
+    .testimonials {
+      padding: 5rem 0 5.5rem; background: var(--sand); position: relative; overflow: hidden;
+    }
+    .testimonials-header { text-align: center; margin-bottom: 3rem; }
+    .testimonials-header h2 { color: var(--blue-deep); margin-bottom: 0.5rem; }
+    .testimonials-grid {
+      display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+      max-width: 900px; margin: 0 auto;
+    }
+    @media (min-width: 640px) { .testimonials-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px) { .testimonials-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .testimonial-card {
+      background: var(--white); border-radius: 16px; padding: 1.75rem;
+      box-shadow: 0 2px 16px rgba(12, 74, 142, 0.04);
+      position: relative;
+      transition: transform 0.5s var(--ease-out-expo), box-shadow 0.5s var(--ease-out-expo);
+    }
+    .testimonial-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(12, 74, 142, 0.07);
+    }
+    .testimonial-card:active { transform: scale(0.98); }
+    .testimonial-stars {
+      display: flex; gap: 2px; margin-bottom: 1rem;
+      color: var(--yellow); font-size: 0.9rem;
+    }
+    .testimonial-card blockquote {
+      font-size: 0.88rem; color: var(--text-secondary);
+      line-height: 1.7; margin-bottom: 1.25rem;
+      font-style: italic;
+    }
+    .testimonial-card blockquote em {
+      font-style: normal; font-weight: 500; color: var(--text-primary);
+    }
+    .testimonial-author {
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .testimonial-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--blue-light); display: flex;
+      align-items: center; justify-content: center;
+      font-size: 0.82rem; font-weight: 600; color: var(--blue-mid);
+      flex-shrink: 0;
+    }
+    .testimonial-name {
+      font-size: 0.82rem; font-weight: 500; color: var(--text-primary);
+      line-height: 1.3;
+    }
+    .testimonial-detail {
+      font-size: 0.72rem; color: var(--text-light); font-weight: 300;
+    }
+    .testimonial-tag {
+      position: absolute; top: 1.25rem; right: 1.25rem;
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 0.25rem 0.6rem;
+      border-radius: 100px;
+    }
+    .testimonial-tag--hospitality { background: var(--coral-soft); color: var(--coral); }
+    .testimonial-tag--snorkeling { background: var(--teal-soft); color: var(--teal); }
+    .testimonial-tag--family { background: var(--green-soft); color: var(--green); }
+
+    /* ========================================
+       CONTACT
+    ======================================== */
+    .contact {
+      padding: 5rem 0 5.5rem; padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+      background: var(--blue-deep); position: relative; overflow: hidden;
+    }
+    .contact::before {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+      background:
+        radial-gradient(ellipse 50% 50% at 10% 90%, rgba(61, 184, 176, 0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 90% 10%, rgba(242, 201, 76, 0.06) 0%, transparent 70%);
+    }
+    .contact-inner { position: relative; z-index: 1; text-align: center; max-width: 560px; margin: 0 auto; }
+    .contact h2 { color: var(--white); margin-bottom: 0.75rem; }
+    .contact-sub {
+      color: rgba(255, 255, 255, 0.78); font-size: 0.95rem;
+      margin-bottom: 2.5rem; line-height: 1.7;
+    }
+    .contact-details { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }
+    .contact-item {
+      display: flex; align-items: center; justify-content: center;
+      gap: 0.75rem; color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem; min-height: 48px; padding: 0.5rem 1rem;
+      transition: color 0.3s ease;
+    }
+    .contact-item:hover { color: var(--white); }
+    .contact-item:active { opacity: 0.8; }
+    .contact-item svg { width: 18px; height: 18px; flex-shrink: 0; opacity: 0.6; }
+    .contact-socials { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2.5rem; }
+    .contact-social {
+      width: 48px; height: 48px; border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.3s var(--ease-out-quad);
+    }
+    .contact-social:hover, .contact-social:focus-visible {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.35);
+      transform: translateY(-2px);
+    }
+    .contact-social:active { transform: scale(0.95); }
+    .contact-social svg { width: 18px; height: 18px; fill: rgba(255, 255, 255, 0.75); }
+    .contact-cta {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 1rem 2.25rem; background: var(--white); color: var(--blue-deep);
+      border-radius: 100px; font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      transition: all 0.4s var(--ease-out-quad);
+    }
+    .contact-cta:hover, .contact-cta:focus-visible {
+      transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      background: var(--yellow);
+    }
+    .contact-cta:active { transform: scale(0.97); }
+    .contact-cta svg { width: 16px; height: 16px; }
+    .contact-location {
+      margin-top: 2rem; font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.55); letter-spacing: 0.08em;
+    }
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+    .footer { padding: 2.5rem 0; background: var(--blue-dark); text-align: center; }
+    .footer-logo {
+      display: flex; align-items: center; justify-content: center;
+      gap: 0.5rem; margin-bottom: 1rem;
+    }
+    .footer-logo img {
+      width: 28px; height: 28px; object-fit: contain;
+      border-radius: 4px; opacity: 0.6;
+    }
+    .footer-logo span {
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.22em;
+      text-transform: uppercase; color: rgba(255, 255, 255, 0.5);
+    }
+    .footer-tagline {
+      font-family: var(--font-display); font-style: italic;
+      font-size: 0.95rem; color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 1rem;
+    }
+    .footer-meta {
+      font-size: 0.72rem; color: rgba(255, 255, 255, 0.35); line-height: 1.8;
+    }
+
+    /* ========================================
+       FAB
+    ======================================== */
+    .fab {
+      position: fixed;
+      bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+      right: 1.25rem;
+      z-index: 900;
+      height: 52px; padding: 0 1.25rem;
+      border-radius: 100px;
+      background: var(--green); color: var(--white);
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      box-shadow: 0 4px 20px rgba(76, 175, 125, 0.35);
+      transition: all 0.4s var(--ease-out-expo);
+      opacity: 0; transform: translateY(20px) scale(0.8);
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .fab.visible { opacity: 1; transform: translateY(0) scale(1); }
+    .fab:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(76, 175, 125, 0.45);
+      background: #3D9D6D;
+    }
+    .fab:active { transform: scale(0.97); }
+    .fab svg { width: 20px; height: 20px; flex-shrink: 0; }
+    .fab-text { display: inline; }
+    @media (min-width: 768px) {
+      .fab { bottom: calc(2rem + env(safe-area-inset-bottom, 0px)); right: 2rem; }
+    }
+
+    /* ========================================
+       RESPONSIVE
+    ======================================== */
+    @media (min-width: 768px) {
+      .container { padding: 0 2.5rem; }
+      .about, .stay, .experience, .visit, .contact { padding-top: 7rem; padding-bottom: 7.5rem; }
+      .hero-palm { width: 130px; height: 130px; }
+    }
+    @media (min-width: 1024px) {
+      .experience-grid { grid-template-columns: repeat(4, 1fr); max-width: 1000px; }
+      .stay-cards { gap: 2rem; }
+    }
+
+    /* ---- Focus ---- */
+    *:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+
+    /* ---- Reduced Motion ---- */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ======================== NAVIGATION ======================== -->
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#home" class="nav-logo" aria-label="Las Palmas Beach Resort - Home">
+      <img src="439915100_904859501651517_4940745455827295214_n.jpg" alt="Las Palmas Beach Resort Logo" width="36" height="36">
+      <span class="nav-logo-text">Las Palmas</span>
+    </a>
+
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+      <div class="nav-hamburger-lines">
+        <span></span><span></span><span></span>
+      </div>
+    </button>
+
+    <div class="nav-menu" id="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#stay">Stay</a>
+      <a href="#experience">Experience</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Contact</a>
+      <div class="nav-menu-sub">
+        <p>Polillo Island, Quezon</p>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-palm">
+        <img src="439915100_904859501651517_4940745455827295214_n.jpg" alt="Las Palmas Beach Resort" width="100" height="100">
+      </div>
+
+      <h1 class="heading-xl hero-title">Las Palmas<br><span class="hero-title-sub">Beach Resort</span></h1>
+      <p class="hero-location">Polillo Island, Quezon</p>
+      <p class="hero-copy">"Where the tide sets the pace and every sunset feels like it was painted just for you."</p>
+
+      <a href="#stay" class="hero-cta">
+        Explore Our Rooms
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M8 3v10M4 9l4 4 4-4"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 40 C320 80 440 0 720 40 C1000 80 1120 0 1440 40 L1440 80 L0 80 Z" fill="white"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-accent reveal">
+          <span class="about-accent-line"></span>
+          <span class="about-accent-dot"></span>
+          <span class="about-accent-line"></span>
+        </div>
+
+        <h2 class="heading-lg reveal">Slow Down. Breathe In.<br>Stay A While.</h2>
+
+        <p class="subtitle reveal reveal-delay-1">
+          There's a kind of quiet you can only find on an island like this. The unhurried rhythm of waves rolling onto shore. The warmth of sand beneath your feet as the afternoon stretches on.
+        </p>
+
+        <p class="subtitle reveal reveal-delay-2">
+          The sound of your children laughing as they chase the tide — and the deep, rare pleasure of having <span class="about-highlight">nowhere else to be</span>.
+        </p>
+
+        <p class="subtitle reveal reveal-delay-3">
+          Las Palmas — <em>"The Palms"</em> — is named for the coconut groves that shelter our shore in Barangay Kalubakis. Far from the rush of the mainland, this is a place that remembers what rest feels like. Come for a weekend. Stay until the island tells you it's time to go.
+        </p>
+
+        <div class="color-strip reveal reveal-delay-4">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo break: paddleboard sunset -->
+  <div class="photo-break" aria-hidden="true">
+    <img src="487172990_1147964767340988_9101583289754417914_n.jpg" alt="" loading="lazy" width="1200" height="400">
+  </div>
+
+  <!-- ======================== ACCOMMODATIONS ======================== -->
+  <section class="stay" id="stay">
+    <div class="container">
+      <div class="stay-header">
+        <p class="label label--section reveal">Accommodations</p>
+        <h2 class="heading-lg reveal reveal-delay-1">Rest Under the Palms</h2>
+        <p class="subtitle reveal reveal-delay-2">Simple comforts, island style.</p>
+      </div>
+
+      <div class="stay-cards">
+        <!-- Wigwam -->
+        <div class="stay-card stay-card--wigwam reveal">
+          <div class="stay-card-image">
+            <img src="486931287_1147983194005812_6600782573604589197_n.jpg" alt="Colorful pink A-frame wigwam cottage surrounded by palm trees" loading="lazy" width="400" height="300">
+          </div>
+          <div class="stay-card-body">
+            <div class="stay-card-topline"></div>
+            <h3>The Wigwam</h3>
+            <p>Colorful A-frame cottages tucked beneath coconut palms. Fall asleep to the sound of the sea, wake up to birdsong. Cozy, charming, and uniquely Polillo.</p>
+            <span class="stay-card-tag">Perfect for: Couples & Solo Travelers</span>
+          </div>
+        </div>
+
+        <!-- Villa -->
+        <div class="stay-card stay-card--villa reveal reveal-delay-1">
+          <div class="stay-card-image">
+            <img src="487479817_1147986244005507_4710395472939435144_n.jpg" alt="Spacious villa room with comfortable bed and tropical surroundings" loading="lazy" width="400" height="300">
+          </div>
+          <div class="stay-card-body">
+            <div class="stay-card-topline"></div>
+            <h3>The Villa</h3>
+            <p>Spacious rooms with all the essentials for a comfortable island stay. Gather the family, spread out, and make yourselves at home — the beach is just steps away.</p>
+            <span class="stay-card-tag">Perfect for: Families & Groups</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stay-cta-wrap reveal">
+        <a href="https://m.me/laspalmasresortpolilioquezon" class="stay-cta" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zm-4 0H9v2h2V9z" clip-rule="evenodd"/></svg>
+          Check Availability
+        </a>
+      </div>
+      <p class="stay-note reveal">Or call us directly at <a href="tel:09157943113" style="color: var(--blue-mid); border-bottom: 1px solid rgba(26,111,212,0.3);">0915 794 3113</a></p>
+    </div>
+  </section>
+
+  <!-- Wave divider -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" style="height: 40px;">
+      <path d="M0 0 L0 30 C360 60 720 0 1080 30 C1260 45 1380 15 1440 30 L1440 0 Z" fill="#F5F0E8"/>
+    </svg>
+  </div>
+
+  <!-- ======================== EXPERIENCE ======================== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="experience-header">
+        <p class="label label--section reveal">Things to Do</p>
+        <h2 class="heading-lg reveal reveal-delay-1">The Island Moves Slowly.<br>So Should You.</h2>
+        <p class="subtitle reveal reveal-delay-2">No itinerary needed. Just follow the light.</p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="exp-card reveal">
+          <span class="exp-card-emoji" aria-hidden="true">🌊</span>
+          <h3>Morning Paddle</h3>
+          <p>Glide across still waters on a paddleboard as the sun rises over the Pacific. Just you, the sea, and the sound of your own breathing.</p>
+        </div>
+        <div class="exp-card reveal reveal-delay-1">
+          <span class="exp-card-emoji" aria-hidden="true">🐚</span>
+          <h3>Beach Days</h3>
+          <p>Build castles, collect shells, or simply lie back and let the hours drift. The best days here are the ones with no plans at all.</p>
+        </div>
+        <div class="exp-card reveal reveal-delay-2">
+          <span class="exp-card-emoji" aria-hidden="true">🌅</span>
+          <h3>Sunset Watching</h3>
+          <p>Every evening, the sky over Polillo puts on a show. Bring someone you love — or just bring yourself. Either way, you won't forget it.</p>
+        </div>
+        <div class="exp-card reveal reveal-delay-3">
+          <span class="exp-card-emoji" aria-hidden="true">🏝️</span>
+          <h3>Island Hopping</h3>
+          <p>Explore hidden coves, white sand beaches, and the wild beauty of the Polillo group of islands. Adventure is always just a boat ride away.</p>
+        </div>
+      </div>
+
+      <div class="experience-cta reveal reveal-delay-4">
+        <a href="#contact">Ask us about island activities &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo strip: wigwams -->
+  <div class="photo-strip" aria-hidden="true">
+    <img src="489417218_1154205506716914_4056185193319144474_n.jpg" alt="" loading="lazy" width="1200" height="400">
+  </div>
+
+  <!-- ======================== VISIT ======================== -->
+  <section class="visit" id="visit">
+    <div class="container">
+      <div class="visit-header">
+        <p class="label label--section reveal">Getting Here</p>
+        <h2 class="heading-lg reveal reveal-delay-1">Finding Your Way<br>to Paradise</h2>
+        <p class="subtitle reveal reveal-delay-2">The journey is part of the escape.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-step reveal">
+          <div class="timeline-dot"></div>
+          <h3>Travel to Real, Quezon</h3>
+          <p>From Manila, take a bus or drive east to Real, Quezon. The road winds through the Sierra Madre — about 3 to 4 hours, depending on traffic and how many times you stop to admire the mountains.</p>
+        </div>
+        <div class="timeline-step reveal reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <h3>Catch a Boat from Ungos Port</h3>
+          <p>Regular boats depart for Polillo Island from Ungos Port. The crossing takes around 2 to 3 hours — watch the mainland shrink behind you as the island draws near.</p>
+        </div>
+        <div class="timeline-step reveal reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <h3>Arrive at Polillo Island</h3>
+          <p>Make your way to Barangay Kalubakis. We'll be here — waiting under the palms, just as we always are.</p>
+        </div>
+      </div>
+
+      <p class="visit-note reveal">Need help planning your trip? <a href="#contact" style="color: var(--blue-mid); border-bottom: 1px solid rgba(26,111,212,0.3);">Reach out</a> and we'll guide you every step of the way.</p>
+    </div>
+  </section>
+
+  <!-- ======================== TESTIMONIALS ======================== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="testimonials-header">
+        <p class="label label--section reveal">Guest Stories</p>
+        <h2 class="heading-lg reveal reveal-delay-1">What Our Guests Say</h2>
+        <p class="subtitle reveal reveal-delay-2">Real experiences from real families.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Card 1: Hospitality -->
+        <div class="testimonial-card reveal">
+          <span class="testimonial-tag testimonial-tag--hospitality">Hospitality</span>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Sobrang bait ng owners. Family room lang ang in-avail namin, pero ang binigay ay yung barkada room — at <em>hindi na kami na-charge sa extra time.</em> Salamat sa mainit na pagtanggap at pag-asikaso sa mga kailangan namin."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RD</div>
+            <div>
+              <div class="testimonial-name">Raul Devera</div>
+              <div class="testimonial-detail">Family stay, overnight</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Snorkeling -->
+        <div class="testimonial-card reveal reveal-delay-1">
+          <span class="testimonial-tag testimonial-tag--snorkeling">Snorkeling</span>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Ganda ng dagat — <em>may corals na sa bandang gitna,</em> maganda mag-snorkeling! Mag-bitbit lang kayo ng goggles at floaters. Ingatan lang na huwag matapakan ang mga corals."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RD</div>
+            <div>
+              <div class="testimonial-name">Raul Devera</div>
+              <div class="testimonial-detail">Weekend getaway</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Food & Comfort -->
+        <div class="testimonial-card reveal reveal-delay-2">
+          <span class="testimonial-tag testimonial-tag--family">Family</span>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Solid ng accommodation dito. <em>Hindi namin prinoblema ang food kasi pwedeng magpaluto sa kanila.</em> Medyo bitin yung stay namin — sa uulitin po!"</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RD</div>
+            <div>
+              <div class="testimonial-name">Raul Devera</div>
+              <div class="testimonial-detail">Family with kids</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <p class="label label--section reveal" style="color: rgba(255,255,255,0.5);">Get in Touch</p>
+        <h2 class="heading-lg reveal reveal-delay-1">Your Island Moment<br>Awaits</h2>
+        <p class="contact-sub reveal reveal-delay-2">Ready to trade the noise for the sound of waves?<br>Reach out — we'd love to welcome you.</p>
+
+        <div class="contact-details reveal reveal-delay-3">
+          <a href="tel:09157943113" class="contact-item">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            0915 794 3113
+          </a>
+          <a href="mailto:laspalmaspolillo@gmail.com" class="contact-item">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            laspalmaspolillo@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-socials reveal reveal-delay-3">
+          <a href="https://www.facebook.com/laspalmasresortpolilioquezon" class="contact-social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/laspalmas_resortpolillo" class="contact-social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+
+        <a href="https://m.me/laspalmasresortpolilioquezon" class="contact-cta reveal reveal-delay-4" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zm-4 0H9v2h2V9z" clip-rule="evenodd"/></svg>
+          Send Us a Message
+        </a>
+
+        <p class="contact-location reveal reveal-delay-4">Brgy. Kalubakis, Polillo Island, Polillo, Quezon</p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="439915100_904859501651517_4940745455827295214_n.jpg" alt="Las Palmas Beach Resort" width="28" height="28" loading="lazy">
+        <span>Las Palmas</span>
+      </div>
+      <p class="footer-tagline">"A quiet corner of the Philippines, waiting for you."</p>
+      <p class="footer-meta">
+        &copy; 2026 Las Palmas Beach Resort. All rights reserved.<br>
+        Owned &amp; Operated by SoVil
+      </p>
+    </div>
+  </footer>
+
+  <!-- ======================== FAB ======================== -->
+  <a href="https://m.me/laspalmasresortpolilioquezon" class="fab" aria-label="Book now on Messenger" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+    </svg>
+    <span class="fab-text">Book Now</span>
+  </a>
+
+  <!-- ======================== JS ======================== -->
+  <script>
+    const nav = document.querySelector('.nav');
+    const hamburger = document.querySelector('.nav-hamburger');
+    const menu = document.querySelector('.nav-menu');
+    const menuLinks = menu.querySelectorAll('a');
+    const fab = document.querySelector('.fab');
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+
+    // ---- Scroll: nav background + FAB + scroll spy ----
+    function onScroll() {
+      const y = window.scrollY;
+      nav.classList.toggle('scrolled', y > 60);
+      fab.classList.toggle('visible', y > window.innerHeight * 0.5);
+
+      // Scroll spy (desktop only)
+      if (window.innerWidth >= 768) {
+        let currentSection = '';
+        sections.forEach(section => {
+          const top = section.offsetTop - 100;
+          if (y >= top) currentSection = section.getAttribute('id');
+        });
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + currentSection);
+        });
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // ---- Parallax (desktop only, with rAF) ----
+    const heroContent = document.querySelector('.hero-content');
+    let heroRafId;
+    function onHeroScroll() {
+      if (heroRafId) return;
+      heroRafId = requestAnimationFrame(() => {
+        heroRafId = null;
+        if (window.innerWidth < 768) return;
+        const y = window.scrollY;
+        const heroH = window.innerHeight;
+        if (y < heroH) {
+          const ratio = y / heroH;
+          heroContent.style.transform = 'translateY(' + (y * 0.15) + 'px)';
+          heroContent.style.opacity = 1 - ratio * 0.6;
+        }
+      });
+    }
+    window.addEventListener('scroll', onHeroScroll, { passive: true });
+
+    // ---- Hamburger menu ----
+    function openMenu() {
+      menu.classList.add('open');
+      hamburger.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+      menuLinks[0].focus();
+    }
+    function closeMenu() {
+      menu.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    hamburger.addEventListener('click', () => {
+      menu.classList.contains('open') ? closeMenu() : openMenu();
+    });
+    menuLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+    // Focus trap + Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) {
+        closeMenu();
+        hamburger.focus();
+      }
+      if (e.key === 'Tab' && menu.classList.contains('open')) {
+        const focusable = [hamburger, ...menuLinks];
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault(); last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault(); first.focus();
+        }
+      }
+    });
+
+    // ---- Reveal animations ----
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>
