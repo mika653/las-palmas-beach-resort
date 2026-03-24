@@ -399,16 +399,16 @@
 
     /* ---- Photo Break ---- */
     .photo-break {
-      width: 100%; height: 280px; position: relative; overflow: hidden;
+      width: 100%; position: relative; overflow: hidden;
+      aspect-ratio: 21 / 9;
     }
     .photo-break img {
-      width: 100%; height: 100%; object-fit: cover; object-position: center 60%;
+      width: 100%; height: 100%; object-fit: cover; object-position: center center;
     }
     .photo-break::after {
       content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
-      background: linear-gradient(180deg, var(--white) 0%, transparent 15%, transparent 85%, var(--sand) 100%);
+      background: linear-gradient(180deg, var(--white) 0%, transparent 12%, transparent 88%, var(--sand) 100%);
     }
-    @media (min-width: 768px) { .photo-break { height: 360px; } }
 
     /* ---- Wave Divider ---- */
     .wave-divider { line-height: 0; position: relative; z-index: 2; }
@@ -540,17 +540,16 @@
 
     /* ---- Wigwams Photo Strip ---- */
     .photo-strip {
-      width: 100%; height: 240px; position: relative; overflow: hidden;
-      margin-top: 3rem;
+      width: 100%; position: relative; overflow: hidden;
+      margin-top: 3rem; aspect-ratio: 2 / 1;
     }
     .photo-strip img {
-      width: 100%; height: 100%; object-fit: cover; object-position: center 70%;
+      width: 100%; height: 100%; object-fit: cover; object-position: center center;
     }
     .photo-strip::after {
       content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
-      background: linear-gradient(180deg, var(--white) 0%, transparent 20%, transparent 80%, rgba(232, 241, 251, 1) 100%);
+      background: linear-gradient(180deg, var(--white) 0%, transparent 12%, transparent 88%, rgba(232, 241, 251, 1) 100%);
     }
-    @media (min-width: 768px) { .photo-strip { height: 320px; } }
 
     /* ========================================
        VISIT
